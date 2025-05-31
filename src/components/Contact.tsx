@@ -37,28 +37,28 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Get Your 
-            <span className="text-orange-500"> Free Quote</span>
+            <span className="text-red-500"> Free Quote</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to experience reliable, professional logistics services? 
             Contact us today for a personalized quote tailored to your needs.
           </p>
-          <div className="w-20 h-1 bg-orange-500 rounded-full mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Send Us Your Requirements</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Send Us Your Requirements</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Full Name *
                     </label>
                     <Input
@@ -67,12 +67,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Email Address *
                     </label>
                     <Input
@@ -81,7 +81,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -89,7 +89,7 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Company Name
                     </label>
                     <Input
@@ -97,12 +97,12 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                       placeholder="Your company"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
                       Phone Number
                     </label>
                     <Input
@@ -110,14 +110,14 @@ const Contact = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                       placeholder="(555) 123-4567"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-300 mb-2">
                     Project Details
                   </label>
                   <Textarea
@@ -125,14 +125,14 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                    className="w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                     placeholder="Tell us about your shipping requirements: pickup location, destination, cargo type, timeline, etc."
                   />
                 </div>
 
                 <Button 
                   type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors"
+                  className="w-full bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-colors"
                 >
                   Get Free Quote
                 </Button>
@@ -141,12 +141,12 @@ const Contact = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-slate-900 rounded-2xl p-8 text-white">
+            <div className="bg-gray-900 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Get Instant Support</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
@@ -154,12 +154,12 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Call Us Directly</h4>
                     <p className="text-gray-300 text-sm mb-2">Speak with our logistics experts</p>
-                    <p className="text-orange-500 font-semibold">1-800-SWIFT-01</p>
+                    <p className="text-red-500 font-semibold">1-800-SWIFT-01</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -168,11 +168,11 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Email Support</h4>
                     <p className="text-gray-300 text-sm mb-2">24/7 customer service</p>
-                    <p className="text-orange-500 font-semibold">quotes@swiftlogistics.com</p>
+                    <p className="text-red-500 font-semibold">quotes@daeliteexpress.com</p>
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-700">
+                <div className="pt-4 border-t border-gray-700">
                   <Button 
                     onClick={handleWhatsAppClick}
                     className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition-colors"
@@ -186,23 +186,23 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <h4 className="text-xl font-semibold text-slate-900 mb-4">Why Choose Us?</h4>
-              <ul className="space-y-3 text-gray-700">
+            <div className="bg-gray-800 rounded-2xl p-8">
+              <h4 className="text-xl font-semibold text-white mb-4">Why Choose Us?</h4>
+              <ul className="space-y-3 text-gray-300">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
                   Free, no-obligation quotes
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
                   24-hour response guarantee
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
                   Competitive pricing
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
                   Industry-leading safety record
                 </li>
               </ul>

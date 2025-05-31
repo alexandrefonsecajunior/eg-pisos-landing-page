@@ -22,42 +22,42 @@ const leaders = [
 
 const Leadership = () => {
   return (
-    <section id="team" className="py-20 bg-gray-50">
+    <section id="team" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Meet Our 
-            <span className="text-orange-500"> Leadership Team</span>
+            <span className="text-red-500"> Leadership Team</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Industry veterans with decades of combined experience driving innovation 
             and excellence in logistics and transportation.
           </p>
-          <div className="w-20 h-1 bg-orange-500 rounded-full mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {leaders.map((leader, index) => (
             <div 
               key={index} 
-              className="group text-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
+              className="group text-center bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
             >
               <div className="relative mb-6">
                 <img 
                   src={leader.image}
                   alt={leader.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover ring-4 ring-gray-100 group-hover:ring-orange-500 transition-all duration-300"
+                  className="w-32 h-32 mx-auto rounded-full object-cover ring-4 ring-gray-700 group-hover:ring-red-500 transition-all duration-300"
                 />
-                <div className="absolute inset-0 w-32 h-32 mx-auto rounded-full bg-gradient-to-t from-orange-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 w-32 h-32 mx-auto rounded-full bg-gradient-to-t from-red-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
-              <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-orange-500 transition-colors">
+              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-red-500 transition-colors">
                 {leader.name}
               </h3>
-              <div className="text-orange-500 font-semibold mb-4">
+              <div className="text-red-500 font-semibold mb-4">
                 {leader.title}
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {leader.bio}
               </p>
             </div>
@@ -65,7 +65,7 @@ const Leadership = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-white">
+          <div className="bg-black rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Built on Experience, Driven by Innovation
             </h3>

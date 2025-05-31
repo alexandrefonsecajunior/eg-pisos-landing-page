@@ -26,34 +26,34 @@ const advantages = [
 
 const Advantages = () => {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Why Choose 
-            <span className="text-orange-500"> SwiftLogistics</span>
+            <span className="text-red-500"> DA ELITE Express</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Experience the difference that advanced technology, professional expertise, 
             and unwavering commitment to excellence makes in your supply chain.
           </p>
-          <div className="w-20 h-1 bg-orange-500 rounded-full mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {advantages.map((advantage, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-orange-100"
+              className="group p-8 bg-gray-900 rounded-2xl hover:bg-gray-800 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20"
             >
               <div className="text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-500 text-white rounded-2xl group-hover:scale-110 transition-transform duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-red-500 text-white rounded-2xl group-hover:scale-110 transition-transform duration-300">
                   <advantage.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 group-hover:text-orange-500 transition-colors">
+                <h3 className="text-xl font-semibold text-white group-hover:text-red-500 transition-colors">
                   {advantage.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   {advantage.description}
                 </p>
               </div>
@@ -61,18 +61,18 @@ const Advantages = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-center text-white">
+        <div className="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Ready to Experience the Difference?
           </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust SwiftLogistics for their critical shipments.
+            Join thousands of satisfied customers who trust DA ELITE Express for their critical shipments.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
               Get Free Quote
             </button>
-            <button className="border border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition-colors">
+            <button className="border border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors">
               Schedule Consultation
             </button>
           </div>
