@@ -1,13 +1,14 @@
-
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">
-              DA ELITE<span className="text-red-500"> Express</span>
-            </h3>
+            <img 
+              src="/lovable-uploads/aba2195d-28ca-441a-9ad9-20d203dffe24.png" 
+              alt="DA ELITE Express"
+              className="h-12 w-auto"
+            />
             <p className="text-gray-300 leading-relaxed">
               Reliable logistics solutions across North America with 25+ years of excellence 
               and a commitment to safety, technology, and customer satisfaction.

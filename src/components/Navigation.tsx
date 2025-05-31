@@ -11,9 +11,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-white">
-                DA ELITE<span className="text-red-500"> Express</span>
-              </h1>
+              <img 
+                src="/lovable-uploads/aba2195d-28ca-441a-9ad9-20d203dffe24.png" 
+                alt="DA ELITE Express"
+                className="h-12 w-auto"
+              />
             </div>
           </div>
           

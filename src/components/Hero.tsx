@@ -11,6 +11,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/aba2195d-28ca-441a-9ad9-20d203dffe24.png" 
+                  alt="DA ELITE Express"
+                  className="h-16 w-auto mb-4"
+                />
+              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Reliable Logistics
                 <span className="text-red-500 block">Solutions</span>
