@@ -14,32 +14,30 @@ const AboutUs = () => {
 
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p className="text-lg">
-                Por mais de 25 anos, a DA ELITE Express tem sido a espinha
-                dorsal das cadeias de suprimentos em toda a América do Norte. De
-                costa a costa, construímos nossa reputação com base na
-                confiabilidade inabalável, tecnologia de ponta e um compromisso
-                absoluto com a segurança, que nos renderam certificações líderes
-                do setor e padrões de segurança de tolerância zero.
+                Por mais de 10 anos, a DA ELITE Express tem sido referência em
+                soluções logísticas para e-commerce, com expertise em operações
+                de line haul em todo o Brasil. De costa a costa, construímos
+                nossa reputação com base na confiabilidade inabalável,
+                tecnologia de ponta e um compromisso absoluto com a segurança..
               </p>
 
               <p className="text-lg">
                 Nossa extensa rede abrange todas as principais rodovias e
                 centros logísticos, permitindo-nos fornecer soluções
-                abrangentes, desde entregas locais até transporte de carga
-                intercontinental. Com uma frota moderna de mais de 500 veículos
-                e uma equipe de profissionais certificados, não apenas
-                transportamos cargas — nós impulsionamos o seu negócio com
-                precisão, velocidade e cuidado.
+                abrangentes. Com uma frota moderna de mais de 20 veículos
+                próprios e uma equipe de profissionais altamente qualificados,
+                não apenas transportamos cargas — nós impulsionamos o seu
+                negócio com precisão, velocidade e cuidado.
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="text-center p-4 bg-gray-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-red-500 mb-1">500+</div>
-                <div className="text-sm text-gray-400">Veículos Modernos</div>
+                <div className="text-2xl font-bold text-red-500 mb-1">20+</div>
+                <div className="text-sm text-gray-400">Veículos Próprios</div>
               </div>
               <div className="text-center p-4 bg-gray-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-red-500 mb-1">25</div>
+                <div className="text-2xl font-bold text-red-500 mb-1">10</div>
                 <div className="text-sm text-gray-400">Estados Cobertos</div>
               </div>
             </div>
@@ -47,7 +45,7 @@ const AboutUs = () => {
 
           <div className="relative">
             <img
-              src="/images/frota.png"
+              src="/images/frota-2.jpeg"
               alt="Frota de caminhões DA ELITE Express"
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
             />

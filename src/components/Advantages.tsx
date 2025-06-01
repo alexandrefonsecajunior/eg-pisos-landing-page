@@ -5,7 +5,7 @@ const advantages = [
     icon: Zap,
     title: "Rastreamento em Tempo Real",
     description:
-      "Tecnologia GPS avançada fornece atualizações ao vivo sobre a localização da sua remessa, garantindo total transparência e tranquilidade.",
+      "Nossa frota conta com GPS em tempo real, localizadores de precisão e imobilizadores, garantindo rastreamento completo, segurança e transparência do início ao fim do transporte.",
   },
   {
     icon: Clock,
@@ -55,7 +55,7 @@ const Advantages = () => {
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="group p-8 bg-gray-900 rounded-2xl hover:bg-gray-800 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20"
+              className="group p-8 bg-gray-900 rounded-2xl hover:bg-gray-800 shadow-[0_0_20px_rgba(255,255,255,0.5)] transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20"
             >
               <div className="text-center space-y-4">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-red-500 text-white rounded-2xl group-hover:scale-110 transition-transform duration-300">

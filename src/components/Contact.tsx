@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/1234567890?text=Olá, gostaria de obter uma cotação para serviços de transporte.",
+      "https://wa.me/+5541996333223?text=Olá, gostaria de obter uma cotação para serviços de transporte.",
       "_blank"
     );
   };
@@ -39,7 +39,7 @@ const Contact = () => {
             <p className="text-gray-300 text-lg mb-1">
               Fale com nossos especialistas:
             </p>
-            <p className="text-white font-bold text-2xl">1-800-SWIFT-01</p>
+            <p className="text-white font-bold text-2xl">(41) 9 9633-3223</p>
           </div>
 
           <div className="bg-gray-900 rounded-2xl p-8 text-white shadow-lg hover:shadow-red-500/20 transition-shadow duration-300">
@@ -48,7 +48,7 @@ const Contact = () => {
             </h4>
             <p className="text-gray-300 text-lg mb-1">Envie sua solicitação:</p>
             <p className="text-white font-bold text-2xl">
-              quotes@daeliteexpress.com
+              pwxtransportes@gmail.com
             </p>
           </div>
         </div>

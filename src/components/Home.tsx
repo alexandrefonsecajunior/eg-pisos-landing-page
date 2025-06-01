@@ -30,8 +30,7 @@ const Home = () => {
                 em que Você Pode Confiar
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
-                Levamos sua carga com segurança, pontualidade e confiança — do
-                Brasil inteiro à sua porta.
+                Levamos sua carga com segurança, pontualidade e confiança.
               </p>
             </div>
 
@@ -62,7 +61,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-red-500">20+</div>
+                <div className="text-3xl font-bold text-red-500">50+</div>
                 <div className="text-sm text-gray-400">
                   Clientes Satisfeitos
                 </div>

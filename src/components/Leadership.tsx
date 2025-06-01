@@ -2,13 +2,13 @@ const leaders = [
   {
     name: "Emerson Ribeiro",
     title: "Co-Fundador",
-    bio: "Mais de 25 anos transformando a logística com soluções inovadoras e padrões de segurança líderes do setor.",
+    bio: "Há 5 anos como sócio da empresa, contribui ativamente nas decisões administrativas e estratégicas. Seu foco está nas áreas financeira e comercial, com atuação direta em processos de compra, venda e relacionamento com clientes. Seu perfil analítico fortalece a gestão e a expansão sustentável do negócio.",
     image: "/images/emerson.png",
   },
   {
     name: "Wesley Nascimento",
     title: "Co-Fundador",
-    bio: "Mais de 25 anos transformando a logística com soluções inovadoras e padrões de segurança líderes do setor.",
+    bio: "Com mais de 20 anos de experiência em logística e transportes, atua há 11 anos na direção da empresa. É responsável pelas decisões estratégicas da operação e pela captação de novos clientes. Sua visão de longo prazo tem impulsionado o crescimento e a consolidação da marca no mercado.",
     image: "/images/ye.png",
   },
 ];
@@ -23,8 +23,10 @@ const Leadership = () => {
             <span className="text-red-500"> Equipe de Liderança</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Veteranos da indústria com décadas de experiência combinada
-            impulsionando a inovação e a excelência em logística e transporte.
+            Com mais de 25 anos de atuação combinada, nossos sócios unem
+            expertise em logística, gestão comercial e financeira para
+            impulsionar soluções eficientes e confiáveis no transporte de
+            cargas.
           </p>
           <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
@@ -33,7 +35,7 @@ const Leadership = () => {
           {leaders.map((leader, index) => (
             <div
               key={index}
-              className="group text-center bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300"
+              className="group text-center bg-gray-800 rounded-2xl p-8 shadow-[0_0_20px_rgba(255,255,255,0.5)] hover:shadow-xl transition-all duration-300"
             >
               <div className="relative mb-6">
                 <img
