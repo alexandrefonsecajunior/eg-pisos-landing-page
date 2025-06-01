@@ -1,6 +1,6 @@
-
-import Hero from "@/components/Hero";
+import Home from "@/components/Home";
 import Navigation from "@/components/Navigation";
+import ClientLogosCarousel from "@/components/ClientLogosCarousel";
 import AboutUs from "@/components/AboutUs";
 import Advantages from "@/components/Advantages";
 import Leadership from "@/components/Leadership";
@@ -11,12 +11,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
-      <Hero />
+      <Home />
+      {/* <ClientLogosCarousel /> */}
       <AboutUs />
       <Advantages />
       <Leadership />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

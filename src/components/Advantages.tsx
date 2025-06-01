@@ -1,27 +1,30 @@
-
 import { Clock, Truck, Zap, Users } from "lucide-react";
 
 const advantages = [
   {
     icon: Zap,
-    title: "Real-Time Tracking",
-    description: "Advanced GPS technology provides live updates on your shipment's location, ensuring complete transparency and peace of mind."
+    title: "Rastreamento em Tempo Real",
+    description:
+      "Tecnologia GPS avançada fornece atualizações ao vivo sobre a localização da sua remessa, garantindo total transparência e tranquilidade.",
   },
   {
     icon: Clock,
-    title: "Guaranteed Deadlines",
-    description: "Our 99.8% on-time delivery rate is backed by precision planning and contingency protocols that keep your schedule intact."
+    title: "Prazos Garantidos",
+    description:
+      "Nossa taxa de entrega pontual de 99,8% é respaldada por um planejamento de precisão e protocolos de contingência que mantêm seu cronograma intacto.",
   },
   {
     icon: Truck,
-    title: "Modern Fleet",
-    description: "State-of-the-art vehicles equipped with the latest safety features and fuel-efficient engines for reliable, eco-friendly transport."
+    title: "Frota Moderna",
+    description:
+      "Veículos de última geração equipados com os mais recentes recursos de segurança e motores eficientes em termos de combustível para um transporte confiável e ecológico.",
   },
   {
     icon: Users,
-    title: "Custom Solutions",
-    description: "Tailored logistics strategies designed around your specific needs, from specialized cargo to flexible scheduling options."
-  }
+    title: "Soluções Personalizadas",
+    description:
+      "Estratégias logísticas personalizadas, desenhadas em torno das suas necessidades específicas, desde cargas especializadas até opções de agendamento flexíveis.",
+  },
 ];
 
 const Advantages = () => {
@@ -30,20 +33,21 @@ const Advantages = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Why Choose 
+            Por que escolher a
             <span className="text-red-500"> DA ELITE Express</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience the difference that advanced technology, professional expertise, 
-            and unwavering commitment to excellence makes in your supply chain.
+            Experimente a diferença que a tecnologia avançada, a experiência
+            profissional e o compromisso inabalável com a excelência fazem na
+            sua cadeia de suprimentos.
           </p>
           <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {advantages.map((advantage, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group p-8 bg-gray-900 rounded-2xl hover:bg-gray-800 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20"
             >
               <div className="text-center space-y-4">
@@ -63,17 +67,18 @@ const Advantages = () => {
 
         <div className="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Ready to Experience the Difference?
+            Pronto para Sentir a Diferença?
           </h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust DA ELITE Express for their critical shipments.
+            Junte-se a milhares de clientes satisfeitos que confiam na DA ELITE
+            Express para suas remessas críticas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Get Free Quote
+              Obter Cotação Gratuita
             </button>
             <button className="border border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors">
-              Schedule Consultation
+              Agendar Consulta
             </button>
           </div>
         </div>
