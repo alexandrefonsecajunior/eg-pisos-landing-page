@@ -27,12 +27,12 @@ const advantages = [
   },
 ];
 
-const sendToContactSection = () => {
-  const contactSection = document.getElementById("contact");
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: "smooth" });
-  }
-};
+// const sendToContactSection = () => {
+//   const contactSection = document.getElementById("contact");
+//   if (contactSection) {
+//     contactSection.scrollIntoView({ behavior: "smooth" });
+//   }
+// };
 
 const Advantages = () => {
   return (
@@ -51,27 +51,42 @@ const Advantages = () => {
           <div className="w-20 h-1 bg-red-500 rounded-full mx-auto mt-4"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {advantages.map((advantage, index) => (
-            <div
-              key={index}
-              className="group p-8 bg-gray-900 rounded-2xl hover:bg-gray-800 shadow-[0_0_20px_rgba(255,255,255,0.5)] transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20"
-            >
-              <div className="text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-red-500 text-white rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <advantage.icon className="h-8 w-8" />
+        {/* Novo layout de duas colunas */}
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          {/* Coluna da Esquerda: Advantages */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {advantages.map((advantage, index) => (
+              <div
+                key={index}
+                className="group p-6 bg-gray-900 rounded-2xl hover:bg-gray-800 shadow-[0_0_20px_rgba(255,255,255,0.5)] transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20 flex flex-col"
+              >
+                <div className="text-center space-y-3 flex-grow">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <advantage.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white group-hover:text-red-500 transition-colors">
+                    {advantage.title}
+                  </h3>
+                  <p className="text-sm text-gray-300 leading-relaxed">
+                    {advantage.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-white group-hover:text-red-500 transition-colors">
-                  {advantage.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {advantage.description}
-                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Coluna da Direita: Imagem */}
+          <div className="relative w-full shadow-[0_0_20px_rgba(255,255,255,0.5)] rounded-2xl">
+            <img
+              src="/images/sunset-truck.jpeg"
+              alt="Imagem de destaque das vantagens DA ELITE Express"
+              className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg"
+            />
+          </div>
         </div>
 
+        {/* Seção inferior comentada por enquanto */}
+        {/* 
         <div className="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Pronto para Sentir a Diferença?
@@ -89,6 +104,7 @@ const Advantages = () => {
             </button>
           </div>
         </div>
+        */}
       </div>
     </section>
   );
