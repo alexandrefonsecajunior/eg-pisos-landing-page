@@ -39,7 +39,7 @@ const AboutUs = () => {
                 <div className="text-sm text-gray-400">Veículos Modernos</div>
               </div>
               <div className="text-center p-4 bg-gray-800 rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-red-500 mb-1">48</div>
+                <div className="text-2xl font-bold text-red-500 mb-1">25</div>
                 <div className="text-sm text-gray-400">Estados Cobertos</div>
               </div>
             </div>
@@ -55,7 +55,6 @@ const AboutUs = () => {
               <div className="text-sm font-medium text-red-500 mb-1">
                 SEGURANÇA EM PRIMEIRO LUGAR
               </div>
-              <div className="text-lg font-bold">Certificado DOT</div>
               <div className="text-sm text-gray-300">
                 Registro zero de incidentes
               </div>

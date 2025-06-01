@@ -27,6 +27,13 @@ const advantages = [
   },
 ];
 
+const sendToContactSection = () => {
+  const contactSection = document.getElementById("contact");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Advantages = () => {
   return (
     <section id="services" className="py-20 bg-black">
@@ -74,11 +81,11 @@ const Advantages = () => {
             Express para suas remessas críticas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Obter Cotação Gratuita
-            </button>
-            <button className="border border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors">
-              Agendar Consulta
+            <button
+              onClick={sendToContactSection}
+              className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Obter Orçamento
             </button>
           </div>
         </div>

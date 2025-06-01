@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Truck } from "lucide-react";
 
 const Home = () => {
+  const sendToContactSection = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="home" className="relative bg-black text-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-transparent"></div>
@@ -18,35 +25,28 @@ const Home = () => {
                 />
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Logística Confiável
+                Logística com
                 <span className="text-red-500 block">Soluções</span>
                 em que Você Pode Confiar
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
                 Levamos sua carga com segurança, pontualidade e confiança — do
-                Brasil inteiro à sua porta. Somos referência em logística na
-                região Sul.
+                Brasil inteiro à sua porta.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
+                onClick={sendToContactSection}
                 size="lg"
                 className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 hover:scale-105"
               >
-                Obter Cotação Instantânea
+                Obter Orçamento
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200"
-              >
-                Nossos Serviços
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-700">
+            <div className="grid grid-cols-4 gap-8 pt-8 border-t border-gray-700">
               <div className="text-center">
                 <div className="text-3xl font-bold text-red-500">25+</div>
                 <div className="text-sm text-gray-400">Anos de Experiência</div>
@@ -59,6 +59,12 @@ const Home = () => {
                 <div className="text-3xl font-bold text-red-500">99.8%</div>
                 <div className="text-sm text-gray-400">
                   Taxa de Pontualidade
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-red-500">20+</div>
+                <div className="text-sm text-gray-400">
+                  Clientes Satisfeitos
                 </div>
               </div>
             </div>
@@ -78,10 +84,11 @@ const Home = () => {
                     <Truck className="h-6 w-6 text-red-500" />
                     <div>
                       <div className="text-sm font-medium">
-                        Rastreamento em Tempo Real
+                        Referencia no Mercado
                       </div>
                       <div className="text-xs text-gray-300">
-                        Monitoramento GPS ao vivo para todas as remessas
+                        Comprometidos com as ferramentas de logística mais
+                        avançadas para otimizar a sua operação.
                       </div>
                     </div>
                   </div>

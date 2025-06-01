@@ -9,7 +9,7 @@ const Navigation = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsMenuOpen(false); // Close menu after click
+    setIsMenuOpen(false);
   };
 
   return (
