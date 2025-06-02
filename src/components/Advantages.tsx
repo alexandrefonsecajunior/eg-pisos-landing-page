@@ -58,7 +58,7 @@ const Advantages = () => {
             {advantages.map((advantage, index) => (
               <div
                 key={index}
-                className="group p-6 bg-gray-900 rounded-2xl hover:bg-gray-800 shadow-[0_0_20px_rgba(255,255,255,0.5)] transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20 flex flex-col"
+                className="group p-6 bg-gray-900 rounded-2xl hover:bg-gray-800 transition-all duration-300 cursor-pointer border border-transparent hover:border-red-500/20 flex flex-col"
               >
                 <div className="text-center space-y-3 flex-grow">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-red-500 text-white rounded-xl group-hover:scale-110 transition-transform duration-300">
@@ -76,7 +76,7 @@ const Advantages = () => {
           </div>
 
           {/* Coluna da Direita: Imagem */}
-          <div className="relative w-full shadow-[0_0_20px_rgba(255,255,255,0.5)] rounded-2xl">
+          <div className="relative w-full card-glow rounded-2xl aspect-[4/3] lg:aspect-auto">
             <img
               src="/images/sunset-truck.jpeg"
               alt="Imagem de destaque das vantagens DA ELITE Express"

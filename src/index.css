@@ -99,3 +99,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .card-glow {
+    @apply shadow-[0_0_20px_rgba(255,255,255,0.5)];
+  }
+  /* You can add more custom utilities here if needed */
+}

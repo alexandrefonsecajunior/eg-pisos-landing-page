@@ -43,7 +43,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative card-glow rounded-2xl">
             <img
               src="/images/frota-2.jpeg"
               alt="Frota de caminhões DA ELITE Express"

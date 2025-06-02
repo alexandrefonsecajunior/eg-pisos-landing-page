@@ -70,7 +70,7 @@ const Home = () => {
           </div>
 
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden">
               <img
                 src="/images/referencia.png"
                 alt="Tecnologia moderna de logística e rastreamento"
@@ -78,7 +78,7 @@ const Home = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="bg-white/10 backdrop-blur-sm card-glow rounded-lg p-4 border border-white/20">
                   <div className="flex items-center space-x-3">
                     <Truck className="h-6 w-6 text-red-500" />
                     <div>
