@@ -1,92 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 85%;
+    --primary-foreground: 0 0% 2%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 85%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* EG Colors - Sophisticated Industrial Theme */
+    --eg-dark: 0 0% 7%;
+    --eg-darker: 0 0% 4%;
+    --eg-light: 0 0% 98%;
+    --eg-gray: 0 0% 65%;
+    --eg-silver: 0 0% 85%;
+    --eg-light-gray: 0 0% 90%;
+    --eg-accent: 0 0% 15%;
+    --eg-medium-gray: 0 0% 40%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Root CSS Variables for EG Pisos Theme */
+    --eg-primary: hsl(240, 10%, 15%);
+    --eg-secondary: hsl(240, 6%, 20%);
+    --eg-success: hsl(142, 76%, 36%);
+    --eg-warning: hsl(45, 100%, 60%);
+    --eg-error: hsl(0, 84%, 60%);
+    
+    /* WhatsApp Colors */
+    --whatsapp-green: #25D366;
+    --whatsapp-green-dark: #128C7E;
+    --whatsapp-green-light: #DCF8C6;
+    --whatsapp-green-bg: rgba(37, 211, 102, 0.1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 85%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 2%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 85%;
   }
 }
 
@@ -101,8 +93,350 @@
 }
 
 @layer utilities {
-  .card-glow {
-    @apply shadow-[0_0_20px_rgba(255,255,255,0.5)];
+  /* EG Pisos Specific Utilities */
+  .eg-bg-primary {
+    background-color: var(--eg-primary);
   }
-  /* You can add more custom utilities here if needed */
+  
+  .eg-bg-secondary {
+    background-color: var(--eg-secondary);
+  }
+  
+  .eg-bg-darker {
+    background-color: var(--eg-darker);
+  }
+  
+  .eg-text-silver {
+    color: var(--eg-silver);
+  }
+  
+  .eg-text-light-gray {
+    color: var(--eg-light-gray);
+  }
+  
+  .eg-text-medium-gray {
+    color: hsl(var(--eg-medium-gray));
+  }
+  
+  .eg-border-silver {
+    border-color: var(--eg-silver);
+  }
+  
+  .eg-bg-silver {
+    background-color: hsl(var(--eg-silver));
+  }
+  
+  .eg-bg-light-gray {
+    background-color: hsl(var(--eg-light-gray));
+  }
+
+  /* Geometric Elements */
+  .geometric-accent {
+    position: relative;
+  }
+  
+  .geometric-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, hsl(var(--eg-silver)) 0%, hsl(var(--eg-light-gray)) 100%);
+    transform: skewX(-45deg);
+    transform-origin: top left;
+  }
+  
+  .diagonal-cut {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  }
+  
+  .diagonal-cut-reverse {
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Industrial Shadows */
+  .industrial-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .industrial-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Gradient Overlays */
+  .silver-gradient {
+    background: linear-gradient(135deg, var(--eg-silver), var(--eg-light-gray));
+  }
+  
+  /* WhatsApp Specific Styles */
+  .whatsapp-gradient {
+    background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-green-dark));
+  }
+  
+  .whatsapp-bg {
+    background-color: var(--whatsapp-green-bg);
+    border-color: var(--whatsapp-green);
+  }
+  
+  .whatsapp-border {
+    border-color: var(--whatsapp-green);
+  }
+  
+  .whatsapp-text {
+    color: var(--whatsapp-green);
+  }
+  
+  .whatsapp-glow {
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
+  }
+  
+  .whatsapp-pulse {
+    animation: whatsapp-pulse 2s infinite;
+  }
+  
+  @keyframes whatsapp-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+  
+  .dark-gradient {
+    background: linear-gradient(135deg, hsl(var(--eg-darker)) 0%, hsl(var(--eg-dark)) 100%);
+  }
+  
+  .industrial-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--eg-darker)) 0%, 
+      hsl(var(--eg-dark)) 50%, 
+      hsl(var(--eg-accent)) 100%);
+  }
+
+  /* Animated Elements */
+  .geometric-line {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .geometric-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--eg-silver)), transparent);
+    transition: left 0.6s ease;
+  }
+  
+  .geometric-line:hover::after {
+    left: 100%;
+  }
+
+  /* Card Glow Effect */
+  .card-glow {
+    box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.1),
+      0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-glow:hover {
+    box-shadow: 
+      0 0 30px rgba(255, 255, 255, 0.2),
+      0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Swiper Custom Styles for Gallery */
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Navigation Buttons */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--eg-silver) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 0 !important;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: var(--eg-silver) !important;
+    color: black !important;
+    transform: scale(1.1);
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+
+  /* Pagination */
+  .swiper-pagination-bullet {
+    background: var(--eg-silver) !important;
+    opacity: 0.5 !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: var(--eg-silver) !important;
+    transform: scale(1.2);
+  }
+
+  /* Zoom */
+.swiper-zoom-container {
+  cursor: zoom-in;
+}
+
+.swiper-zoom-container.swiper-zoom-container-zoomed {
+  cursor: zoom-out;
+}
+
+/* Modal Image Zoom */
+.modal-image {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.modal-image.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
+.modal-image:not(.zoomed) {
+  cursor: zoom-in;
+}
+
+  /* Gallery Thumbnails */
+.gallery-thumbs .swiper-slide {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1 !important;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active div {
+  border: 3px solid var(--eg-silver) !important;
+  transform: scale(1.05);
+}
+
+.gallery-thumbs .swiper-slide:hover {
+  opacity: 1;
+}
+
+.gallery-thumbs .swiper-wrapper {
+  align-items: center;
+}
+
+.gallery-thumbs {
+  padding: 0 !important;
+}
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--eg-primary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--eg-silver);
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--eg-light-gray);
+  }
+
+  /* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px !important;
+  }
+
+  /* Mobile Modal Adjustments */
+  .modal-image.zoomed {
+    transform: scale(1.2);
+  }
+}
+
+/* Large Screen Adjustments */
+@media (min-width: 1024px) {
+  .modal-image.zoomed {
+    transform: scale(1.8);
+  }
+}
+
+  /* Animation for Gallery Items */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .gallery-item {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  /* Loading State */
+  .loading-skeleton {
+    background: linear-gradient(90deg, var(--eg-secondary) 25%, var(--eg-primary) 50%, var(--eg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
 }

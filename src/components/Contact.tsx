@@ -1,69 +1,221 @@
 import { Button } from "@/components/ui/button";
+import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
 
 const Contact = () => {
+  const whatsappNumber = "5541998676269"; // SUBSTITUA pelo número real da EG Pisos
+  const whatsappMessage =
+    "Olá! Gostaria de solicitar um orçamento para revestimento epóxi.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   const handleWhatsAppClick = () => {
-    window.open(
-      "https://wa.me/+5541996333223?text=Olá, gostaria de obter uma cotação para serviços de transporte.",
-      "_blank"
-    );
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
-    <section id="contact" className="py-20 bg-black">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          Fale Conosco Agora Mesmo!
-        </h2>
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
-          Pronto para otimizar sua logística? Clique abaixo para iniciar uma
-          conversa via WhatsApp ou, se preferir, utilize nossos outros canais de
-          contato.
-        </p>
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 eg-bg-primary">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
+            ENTRE EM <span className="eg-text-silver">CONTATO</span>
+          </h2>
+          <div className="w-20 sm:w-24 h-1 silver-gradient mx-auto mb-6 sm:mb-8"></div>
+          <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+            Pronto para transformar seu ambiente com{" "}
+            <span className="eg-text-silver font-semibold">
+              revestimentos de alta qualidade
+            </span>
+            ? Entre em contato conosco pelo WhatsApp!
+          </p>
+        </div>
 
-        <Button
-          onClick={handleWhatsAppClick}
-          size="lg"
-          className="bg-green-500 hover:bg-green-600 text-white px-10 py-6 text-xl font-semibold rounded-lg transition-colors shadow-lg hover:shadow-xl mb-12 transform hover:scale-105"
-        >
-          <svg className="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
-          </svg>
-          Contate-nos via WhatsApp
-        </Button>
+        {/* Contact Info and Map */}
+        <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16">
+          {/* Contact Information */}
+          <div className="space-y-6 sm:space-y-8">
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 sm:mb-6">
+                INFORMAÇÕES DE <span className="eg-text-silver">CONTATO</span>
+              </h3>
+              <p className="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8">
+                Múltiplas formas de entrar em contato conosco. Escolha a que for
+                mais conveniente para você.
+              </p>
+            </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-10 pt-10 border-t border-gray-700/50">
-          <div className="bg-gray-900 rounded-2xl p-8 text-white shadow-lg hover:shadow-red-500/20 transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-3 text-red-500">
-              Ligue Direto
-            </h4>
-            <p className="text-gray-300 text-lg mb-1">
-              Fale com nossos especialistas:
-            </p>
-            <p className="text-white font-bold text-2xl">(41) 9 9633-3223</p>
+            <div className="space-y-4 sm:space-y-6">
+              <div
+                className="whatsapp-bg border-l-6 whatsapp-border rounded-lg p-6 sm:p-8 cursor-pointer hover:scale-105 transition-all duration-300 whatsapp-glow relative overflow-hidden"
+                onClick={handleWhatsAppClick}
+              >
+                {/* Background pattern */}
+
+                <div className="relative z-10 flex items-start space-x-4">
+                  <div className="w-16 sm:w-18 h-16 sm:h-18 whatsapp-gradient rounded-full flex items-center justify-center flex-shrink-0 whatsapp-pulse">
+                    <MessageCircle className="h-8 sm:h-10 w-8 sm:w-10 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <h4 className="text-lg sm:text-xl font-black text-white">
+                        WhatsApp
+                      </h4>
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    </div>
+                    <p className="text-base sm:text-lg whatsapp-text font-bold mb-1">
+                      (41) 99867-6269
+                    </p>
+                    <p className="text-sm text-green-200 font-semibold">
+                      Clique aqui e fale agora conosco!
+                    </p>
+                    <p className="text-xs text-gray-400 mt-2">
+                      Resposta garantida • Atendimento personalizado
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-800 border-l-6 border-blue-500 rounded-lg p-6 sm:p-8 hover:scale-105 transition-all duration-300">
+                <div className="relative z-10 flex items-start space-x-4">
+                  <div className="w-16 sm:w-18 h-16 sm:h-18 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-8 sm:h-10 w-8 sm:w-10 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg sm:text-xl font-black text-white mb-2">
+                      Telefone
+                    </h4>
+                    <p className="text-base sm:text-lg text-blue-400 font-bold mb-1">
+                      (41) 99867-6269
+                    </p>
+                    <p className="text-sm text-blue-200 font-semibold">
+                      Ligue diretamente para nossa equipe
+                    </p>
+                    <p className="text-xs text-gray-400 mt-2">
+                      Horário comercial • Atendimento especializado
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-800 border-l-6 border-purple-500 rounded-lg p-6 sm:p-8 hover:scale-105 transition-all duration-300">
+                <div className="relative z-10 flex items-start space-x-4">
+                  <div className="w-16 sm:w-18 h-16 sm:h-18 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-8 sm:h-10 w-8 sm:w-10 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg sm:text-xl font-black text-white mb-2">
+                      E-mail
+                    </h4>
+                    <p className="text-base sm:text-lg text-purple-400 font-bold mb-1">
+                      contato@egpisos.com.br
+                    </p>
+                    <p className="text-sm text-purple-200 font-semibold">
+                      Envie sua mensagem ou solicitação
+                    </p>
+                    <p className="text-xs text-gray-400 mt-2">
+                      Resposta em até 24h • Documentação completa
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-800 border-l-6 border-orange-500 rounded-lg p-6 sm:p-8 hover:scale-105 transition-all duration-300">
+                <div className="relative z-10 flex items-start space-x-4">
+                  <div className="w-16 sm:w-18 h-16 sm:h-18 bg-gradient-to-r from-orange-600 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Clock className="h-8 sm:h-10 w-8 sm:w-10 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-lg sm:text-xl font-black text-white mb-2">
+                      Horários de Atendimento
+                    </h4>
+                    <p className="text-base sm:text-lg text-orange-400 font-bold mb-1">
+                      Segunda a Sexta: 8h às 18h
+                    </p>
+                    <p className="text-sm text-orange-200 font-semibold">
+                      Sábado: 8h às 14h
+                    </p>
+                    <p className="text-xs text-gray-400 mt-2">
+                      Atendimento presencial e remoto • Visitas agendadas
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-gray-900 rounded-2xl p-8 text-white shadow-lg hover:shadow-red-500/20 transition-shadow duration-300">
-            <h4 className="text-xl font-semibold mb-3 text-red-500">
-              Suporte por Email
-            </h4>
-            <p className="text-gray-300 text-lg mb-1">Envie sua solicitação:</p>
-            <p className="text-white font-bold text-2xl">
-              pwxtransportes@gmail.com
-            </p>
+          {/* Google Maps */}
+          <div className="space-y-6 sm:space-y-8">
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 sm:mb-6">
+                NOSSA <span className="eg-text-silver">LOCALIZAÇÃO</span>
+              </h3>
+              <p className="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8">
+                Atendemos toda a Grande São Paulo e região metropolitana.
+                Confira nossa localização no mapa.
+              </p>
+            </div>
+
+            {/* Location Info */}
+            <div className="flex items-start space-x-4 p-4 sm:p-6 eg-bg-darker rounded-none border-l-4 eg-border-silver industrial-shadow mb-6">
+              <div className="w-12 sm:w-14 h-12 sm:h-14 silver-gradient rounded-none flex items-center justify-center flex-shrink-0">
+                <MapPin className="h-5 sm:h-6 w-5 sm:w-6 text-black" />
+              </div>
+              <div>
+                <h4 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
+                  Área de Atendimento
+                </h4>
+                <p className="text-sm sm:text-base text-gray-400">
+                  São Paulo - SP e Grande São Paulo
+                </p>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  Aplicação profissional em toda região metropolitana
+                </p>
+              </div>
+            </div>
+
+            {/* Google Maps Embed */}
+            <div className="relative rounded-none overflow-hidden industrial-shadow-lg h-64 sm:h-80 lg:h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097!2d-46.633309!3d-23.550520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjkiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="grayscale hover:grayscale-0 transition-all duration-500"
+                title="Localização EG Pisos"
+              ></iframe>
+
+              {/* Map Overlay */}
+              <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm p-3 rounded-none">
+                <p className="text-white text-sm font-bold">
+                  📍 EG Pisos Epóxi
+                </p>
+                <p className="text-gray-300 text-xs">São Paulo - SP</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="mt-16 bg-gray-800/50 rounded-2xl p-8 md:p-12 text-white border border-gray-700/50">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Por Que Escolher a Da Elite Express?
-          </h3>
-          <ul className="space-y-3 text-gray-300 text-lg list-disc list-inside max-w-xl mx-auto text-left">
-            <li>Cotações rápidas e transparentes, sem compromisso.</li>
-            <li>Atendimento personalizado e dedicado às suas necessidades.</li>
-            <li>Garantia de resposta e acompanhamento ágil.</li>
-            <li>Preços competitivos e as melhores soluções logísticas.</li>
-            <li>Compromisso com a segurança e a pontualidade da sua carga.</li>
-          </ul>
+        {/* Bottom CTA */}
+        <div className="text-center mt-16 sm:mt-20">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-400 mb-6 sm:mb-8">
+              <span className="eg-text-silver font-semibold">
+                Mais de 15 anos de experiência
+              </span>{" "}
+              em revestimentos de alta qualidade. Transforme seu projeto com
+              nossa expertise e atendimento personalizado.
+            </p>
+            <Button
+              onClick={handleWhatsAppClick}
+              className="whatsapp-gradient hover:opacity-90 text-white font-bold py-4 px-8 text-lg rounded-full transition-all duration-300 transform hover:scale-105 whatsapp-glow"
+            >
+              <MessageCircle className="h-5 w-5 mr-2" />
+              FALAR COM ESPECIALISTA
+            </Button>
+          </div>
         </div>
       </div>
     </section>
