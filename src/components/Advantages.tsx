@@ -56,8 +56,26 @@ const Advantages = () => {
   ];
 
   return (
-    <section id="advantages" className="py-16 sm:py-20 lg:py-24 eg-bg-primary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="advantages"
+      className="relative py-16 sm:py-20 lg:py-24 eg-bg-primary overflow-hidden"
+    >
+      {/* Geometric Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-1/3 h-full diagonal-cut opacity-10 bg-gradient-to-bl from-gray-400 to-gray-300"></div>
+        <div className="absolute bottom-0 right-0 w-1/4 h-1/2 diagonal-cut-reverse opacity-5 bg-gradient-to-tl from-gray-500 to-gray-400"></div>
+
+        {/* Geometric Lines */}
+        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-30"></div>
+        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-20"></div>
+
+        {/* Geometric Shapes - Hidden on mobile */}
+        <div className="hidden md:block absolute top-32 left-16 w-14 h-14 border-2 border-gray-400 rotate-45 opacity-15"></div>
+        <div className="hidden md:block absolute bottom-32 right-20 w-16 h-16 border-2 border-gray-500 rotate-12 opacity-20"></div>
+        <div className="hidden md:block absolute top-1/2 right-1/4 w-12 h-12 border-2 border-gray-400 rotate-45 opacity-10"></div>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
             NOSSAS <span className="eg-text-silver">VANTAGENS</span>
