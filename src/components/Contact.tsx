@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="absolute bottom-0 left-0 w-1/4 h-1/2 diagonal-cut-reverse opacity-5 bg-gradient-to-tr from-gray-500 to-gray-400"></div>
 
         {/* Geometric Lines */}
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-30"></div>
+        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent opacity-30"></div>
         <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-20"></div>
 
         {/* Geometric Shapes - Hidden on mobile */}
@@ -38,10 +38,10 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
             ENTRE EM <span className="eg-text-silver">CONTATO</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 silver-gradient mx-auto mb-6 sm:mb-8"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Pronto para transformar seu ambiente com{" "}
-            <span className="eg-text-silver font-semibold">
+            <span className="text-orange-400 font-semibold">
               revestimentos de alta qualidade
             </span>
             ? Entre em contato conosco pelo WhatsApp!
@@ -168,8 +168,8 @@ const Contact = () => {
                 NOSSA <span className="eg-text-silver">LOCALIZAÇÃO</span>
               </h3>
               <p className="text-sm sm:text-base text-gray-400 mb-6 sm:mb-8">
-                Atendemos toda a Grande São Paulo e região metropolitana.
-                Confira nossa localização no mapa.
+                Atendemos toda a região Sul do Brasil. Confira nossa localização
+                no mapa.
               </p>
             </div>
 
@@ -183,10 +183,10 @@ const Contact = () => {
                   Área de Atendimento
                 </h4>
                 <p className="text-sm sm:text-base text-gray-400">
-                  São Paulo - SP e Grande São Paulo
+                  Curitiba - PR
                 </p>
                 <p className="text-xs sm:text-sm text-gray-500">
-                  Aplicação profissional em toda região metropolitana
+                  Aplicação profissional em toda região Sul do Brasil
                 </p>
               </div>
             </div>
@@ -194,15 +194,13 @@ const Contact = () => {
             {/* Google Maps Embed */}
             <div className="relative rounded-none overflow-hidden industrial-shadow-lg h-64 sm:h-80 lg:h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097!2d-46.633309!3d-23.550520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjkiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7203.009087486477!2d-49.21971237619628!3d-25.48821446235001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfabeb01c3ca5%3A0x32819ecfa16cf631!2sAv.%20Com.%20Franco%2C%206634%20-%20Uberaba%2C%20Curitiba%20-%20PR%2C%2081560-000!5e0!3m2!1spt-BR!2sbr!4v1749307801525!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale hover:grayscale-0 transition-all duration-500"
-                title="Localização EG Pisos"
               ></iframe>
 
               {/* Map Overlay */}
@@ -210,7 +208,7 @@ const Contact = () => {
                 <p className="text-white text-sm font-bold">
                   📍 EG Pisos Epóxi
                 </p>
-                <p className="text-gray-300 text-xs">São Paulo - SP</p>
+                <p className="text-gray-300 text-xs">Curitiba - PR</p>
               </div>
             </div>
           </div>

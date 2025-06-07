@@ -78,7 +78,7 @@ const Navigation = () => {
           <div className="hidden lg:block">
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-white text-black border-2 border-white hover:bg-transparent hover:text-white px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base font-bold rounded-none transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-white text-black border-2 border-white hover:bg-transparent hover:text-white px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base font-bold rounded-none transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl card-glow"
             >
               ORÇAMENTO
             </button>

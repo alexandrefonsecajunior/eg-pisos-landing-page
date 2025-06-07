@@ -70,9 +70,9 @@ const Advantages = () => {
         <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-20"></div>
 
         {/* Geometric Shapes - Hidden on mobile */}
-        <div className="hidden md:block absolute top-32 left-16 w-14 h-14 border-2 border-gray-400 rotate-45 opacity-15"></div>
+        <div className="hidden md:block absolute top-32 left-16 w-14 h-14 border-2 border-orange-400 rotate-45 opacity-15"></div>
         <div className="hidden md:block absolute bottom-32 right-20 w-16 h-16 border-2 border-gray-500 rotate-12 opacity-20"></div>
-        <div className="hidden md:block absolute top-1/2 right-1/4 w-12 h-12 border-2 border-gray-400 rotate-45 opacity-10"></div>
+        <div className="hidden md:block absolute top-1/2 right-1/4 w-12 h-12 border-2 border-orange-500 rotate-45 opacity-10"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,10 +80,10 @@ const Advantages = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
             NOSSAS <span className="eg-text-silver">VANTAGENS</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 silver-gradient mx-auto mb-6 sm:mb-8"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Descubra por que somos a escolha preferida para
-            <span className="eg-text-silver font-semibold">
+            <span className="text-orange-400 font-semibold">
               {" "}
               revestimentos epóxi de alta qualidade
             </span>{" "}
@@ -97,20 +97,31 @@ const Advantages = () => {
             return (
               <div
                 key={index}
-                className="group eg-bg-darker rounded-none p-6 sm:p-8 text-center industrial-shadow hover:scale-105 transition-all duration-300 hover:industrial-shadow-lg"
+                className="group relative eg-bg-darker rounded-none p-6 sm:p-8 text-center hover:scale-105 transition-all duration-300 overflow-hidden"
+                style={{
+                  boxShadow:
+                    "0 0 40px rgba(255, 255, 255, 0.08), 0 0 80px rgba(255, 255, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+                }}
               >
-                <div className="w-16 sm:w-20 h-16 sm:h-20 silver-gradient rounded-none mx-auto mb-4 sm:mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <IconComponent className="h-8 sm:h-10 w-8 sm:w-10 text-black" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 group-hover:eg-text-silver transition-colors duration-300">
-                  {advantage.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                  {advantage.description}
-                </p>
+                {/* Subtle white glow overlay for indirect lighting effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+                <div className="absolute top-0 left-0 w-px h-full bg-gradient-to-b from-white/15 via-transparent to-transparent"></div>
 
-                {/* Geometric accent line */}
-                <div className="w-12 h-px silver-gradient mx-auto mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10">
+                  <div className="w-16 sm:w-20 h-16 sm:h-20 silver-gradient rounded-none mx-auto mb-4 sm:mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <IconComponent className="h-8 sm:h-10 w-8 sm:w-10 text-black font-bold" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-black text-white mb-3 sm:mb-4 group-hover:eg-text-silver transition-colors duration-300 tracking-wide">
+                    {advantage.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-medium">
+                    {advantage.description}
+                  </p>
+
+                  {/* Geometric accent line */}
+                  <div className="w-12 h-px bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mt-4 sm:mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-sm"></div>
+                </div>
               </div>
             );
           })}
@@ -125,7 +136,7 @@ const Advantages = () => {
               </h3>
               <p className="text-base sm:text-lg text-gray-400 leading-relaxed mb-4 sm:mb-6">
                 Nossa experiência consolidada e
-                <span className="eg-text-silver font-semibold">
+                <span className="text-orange-400 font-semibold">
                   {" "}
                   compromisso com a excelência
                 </span>{" "}
@@ -201,7 +212,7 @@ const Advantages = () => {
           </div>
 
           <div className="relative order-1 lg:order-2">
-            <div className="relative rounded-none overflow-hidden industrial-shadow-lg">
+            <div className="relative rounded-none overflow-hidden card-glow">
               <img
                 src="/images/parking.jpeg"
                 alt="Exemplo de revestimento epóxi 100% sólidos aplicado"

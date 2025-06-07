@@ -104,10 +104,10 @@ const Gallery = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6">
             NOSSO <span className="eg-text-silver">PORTFÓLIO</span>
           </h2>
-          <div className="w-20 sm:w-24 h-1 silver-gradient mx-auto mb-6 sm:mb-8"></div>
+          <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-lg sm:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
             Conheça alguns dos nossos projetos realizados e veja a
-            <span className="eg-text-silver font-semibold">
+            <span className="text-orange-400 font-semibold">
               {" "}
               qualidade excepcional
             </span>{" "}
@@ -129,7 +129,7 @@ const Gallery = () => {
                 perSlideOffset: 8,
                 perSlideRotate: 2,
               }}
-              className="w-72 h-[500px] sm:w-80 sm:h-96 mx-auto"
+              className="w-72 h-[500px] sm:w-80 sm:h-96 mx-auto card-glow"
               loop={true}
             >
               {images.map((image, index) => (
@@ -165,7 +165,7 @@ const Gallery = () => {
                         <h3 className="text-xl font-black text-white mb-2 tracking-wide">
                           {image.title}
                         </h3>
-                        <div className="w-16 h-1 silver-gradient mb-3"></div>
+                        <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mb-3"></div>
                         <p className="text-sm text-gray-300 leading-relaxed">
                           {image.alt}
                         </p>

@@ -99,7 +99,7 @@ const AboutUs = () => {
           </div>
 
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative rounded-none overflow-hidden industrial-shadow-lg">
+            <div className="relative rounded-none overflow-hidden card-glow">
               <img
                 src="/images/yellow-ground.jpeg"
                 alt="Aplicação profissional de revestimento epóxi"

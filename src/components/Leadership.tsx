@@ -29,7 +29,7 @@ const Leadership = () => {
         {/* Centered Single Card */}
         <div className="flex justify-center">
           <div className="max-w-md sm:max-w-lg lg:max-w-xl w-full">
-            <div className="group eg-bg-primary rounded-none p-6 sm:p-8 lg:p-10 text-center industrial-shadow hover:scale-105 transition-all duration-300 hover:industrial-shadow-lg relative overflow-hidden">
+            <div className="group eg-bg-primary rounded-none p-6 sm:p-8 lg:p-10 text-center card-glow hover:scale-105 transition-all duration-300 relative overflow-hidden">
               {/* Geometric Background Elements */}
               <div className="absolute inset-0">
                 {/* Geometric Lines - Hidden on mobile */}

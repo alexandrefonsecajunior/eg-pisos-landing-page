@@ -31,8 +31,9 @@ const Home = () => {
         <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-20"></div>
 
         {/* Geometric Shapes - Hidden on mobile */}
-        <div className="hidden md:block absolute top-20 right-20 w-16 h-16 border-2 border-gray-400 rotate-45 opacity-20"></div>
+        <div className="hidden md:block absolute top-20 right-20 w-16 h-16 border-2 border-orange-400 rotate-45 opacity-20"></div>
         <div className="hidden md:block absolute bottom-40 left-10 w-12 h-12 border-2 border-gray-500 rotate-12 opacity-15"></div>
+        <div className="hidden md:block absolute top-1/2 right-1/3 w-8 h-8 border-2 border-orange-500 rotate-45 opacity-15"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
@@ -52,13 +53,13 @@ const Home = () => {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight">
                   REVESTIMENTOS
                   <span className="block eg-text-silver font-black">EPÓXI</span>
-                  <span className="block text-gray-300 font-light">
+                  <span className="block text-orange-400 font-light">
                     100% SÓLIDOS
                   </span>
                 </h1>
 
                 {/* Geometric accent line - Hidden on mobile */}
-                <div className="hidden sm:block absolute -left-4 top-8 w-1 h-20 lg:h-32 silver-gradient transform -skew-y-12"></div>
+                <div className="hidden sm:block absolute -left-4 top-8 w-1 h-20 lg:h-32 bg-gradient-to-b from-orange-500 to-orange-600 transform -skew-y-12"></div>
               </div>
 
               <p className="text-lg sm:text-xl text-gray-400 leading-relaxed max-w-lg font-light">
@@ -67,7 +68,7 @@ const Home = () => {
                   revestimentos de alta performance
                 </span>
                 , oferecendo{" "}
-                <span className="eg-text-light-gray font-semibold">
+                <span className="text-orange-400 font-semibold">
                   beleza excepcional
                 </span>{" "}
                 e{" "}
@@ -82,7 +83,7 @@ const Home = () => {
               <Button
                 onClick={sendToContactSection}
                 size="lg"
-                className="bg-white text-black border-2 border-white hover:bg-transparent hover:text-white px-6 sm:px-8 lg:px-10 py-4 lg:py-6 text-base lg:text-lg font-bold rounded-none transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-white/20"
+                className="bg-white text-black border-2 border-white hover:bg-transparent hover:text-white px-6 sm:px-8 lg:px-10 py-4 lg:py-6 text-base lg:text-lg font-bold rounded-none transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-white/20 card-glow"
               >
                 SOLICITAR ORÇAMENTO
                 <ArrowRight className="ml-2 lg:ml-3 h-5 lg:h-6 w-5 lg:w-6" />
@@ -137,7 +138,7 @@ const Home = () => {
 
           {/* Image Section with Industrial Frame */}
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative rounded-none overflow-hidden industrial-shadow-lg">
+            <div className="relative rounded-none overflow-hidden card-glow">
               <img
                 src="/images/parking2.jpeg"
                 alt="Piso epóxi 100% sólidos de alta qualidade"

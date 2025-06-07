@@ -431,6 +431,9 @@
     animation: loading 1.5s infinite;
   }
 
+  .card-glow {
+    @apply shadow-[0_0_20px_rgba(255,255,255,0.5)];
+  }
   @keyframes loading {
     0% {
       background-position: 200% 0;
